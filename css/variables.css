@@ -6,8 +6,8 @@
     --color-5: #FFFFFF;
     --space-layout-padding-lr: 0px 15px;
     --space-layout-padding-tb: 5px;
-
-
+    --layout__image__width: 100%;
+    --layout__image__height: 350px;
 }
 
 
