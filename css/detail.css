@@ -115,11 +115,12 @@
 
 .product__size, .product__color{
     margin-top: 5px;
-    font-family: "EncodeSans-SemiBold";
+    font-family: "EncodeSans-Bold";
 }
 
 .product__size h5, .product__color h5{
     padding-bottom: 10px;
+    color: var(--color-2);
 }
 
 .footer{
@@ -163,6 +164,7 @@
 }
 
 .footer__ul li a del{
+    font-size: .8em;
     color: var(--color-3);
     font-family: "encodeSans-Regular";
 }
