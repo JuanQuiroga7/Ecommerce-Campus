@@ -167,6 +167,9 @@
     z-index: 1;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
 }
 
 .dropdown__content div:last-child{
@@ -187,7 +190,9 @@
 
 .dropdown:hover .dropdown__content {
     display: block;
-    width: 100%
+    width: 100%;
+    opacity: 1;
+    visibility: visible;
 }
 
 .dropdown:hover .dropdown__button {
@@ -195,4 +200,44 @@
     color: var(--color-5);
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+}
+
+.dropdown:hover .dropdown__button .shopping__option{
+    filter: invert(1);
+}
+.section__bill {
+    margin-top: 25px;
+}
+.section__bill span{
+    font-family: "EncodeSans-SemiBold";
+}
+.bill__total {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.bill__fee {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--color-3);
+}
+.bill__subtotal {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.bill__total label,
+.bill__fee label,
+.bill__subtotal label{
+    color: var(--color-2);
+}
+.bill__total span,
+.bill__fee span,
+.bill__subtotal span{
+    color: var(--color-2);
+    font-family: "EncodeSans-SemiBold";
 }
