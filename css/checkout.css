@@ -7,7 +7,7 @@
 }
 
 .header{
-    padding: var(--space-layout-padding-lr);
+    /* padding: var(--space-layout-padding-lr); */
 }
 
 .header__nav{
@@ -19,6 +19,7 @@
 
 .header__nav div:nth-child(2){
     font-family: "EncodeSans-SemiBold";
+    color: var(--color-2);
 }
 
 
@@ -64,6 +65,7 @@
 .profile__description h3{
     font-family: "EncodeSans-SemiBold";
     font-size: 1em;
+    color: var(--color-2);
 }
 
 .product__description small{
@@ -77,6 +79,7 @@
     position: absolute;
     bottom: 0;
     font-size: .9em;
+    color: var(--color-2);
 }
 
 .product__custom{
@@ -102,8 +105,15 @@
     border-radius: 5px;
 }
 
-.product__select image{
+.product__select img{
     width: 20px;
     height: 20px;
 }
 
+.product__select span{
+    font-family: "EncodeSans-SemiBold";
+}
+
+.section__Shopping{
+    margin-top: 20px;
+}

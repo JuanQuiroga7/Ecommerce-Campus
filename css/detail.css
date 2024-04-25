@@ -138,6 +138,11 @@
     justify-content: space-evenly;
     align-items: center;
     border-radius: 40px;
+    transition-duration: 0.3s;
+}
+
+.footer__ul:hover{
+    transform: scale(1.05);
 }
 
 .footer__ul li{
