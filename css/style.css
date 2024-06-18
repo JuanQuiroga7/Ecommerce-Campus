@@ -108,7 +108,7 @@
 
 .nav__ul li a{
     background: var(--color-5);
-    width: 105px;
+    width: 125px;
     height: 35px;
     display: flex;
     text-decoration: none;
@@ -124,6 +124,12 @@
 
 .nav__ul li a:hover{
     filter: invert(1);
+}
+
+.nav__ul li a span{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .footer{
