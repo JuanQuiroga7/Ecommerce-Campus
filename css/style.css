@@ -208,10 +208,10 @@
     position: absolute;
 }
 
-.section_front_page img:first-child{
+.section_front_page a img:first-child{
     width: var( --layout__image__width);
     height: var( --layout__image__height);
-    object-fit: cover;
+    object-fit: scale-down;
 }
 
 .section_front_page  > img:last-child{

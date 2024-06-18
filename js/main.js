@@ -6,7 +6,7 @@ import { getAllProductName, getAllCategory } from "./module/app.js";
 
 
 let input__search = document.querySelector("#input__search");
-let main__article = document.querySelector(".main__article");
+let main__article = document.querySelector(".main_article");
 let nav__ul = document.querySelector(".nav__ul");
 
 addEventListener("DOMContentLoaded", async e=>{
