@@ -1,4 +1,5 @@
 export const titleProductDetail = async({ data:dataUpdate } = res)=>{
+    console.log('titleProductDetail data:', dataUpdate);
     return /*html*/`
         <article class="article__detail">
             <div class="detail__head">
@@ -19,6 +20,7 @@ export const titleProductDetail = async({ data:dataUpdate } = res)=>{
 
 export const productDetail = async(res)=>{
     let {data} = res;
+    console.log('productDetail data:', data);
     let {
         category_path,
         about_product,

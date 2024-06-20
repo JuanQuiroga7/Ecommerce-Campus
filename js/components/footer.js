@@ -14,8 +14,8 @@ export const buttonCartDetails = async(res)=>{
     console.log(dataUpdate);
     let product_original_price = dataUpdate.product_original_price;
     let product_price = dataUpdate.product_price;
-    if(product_original_price != null && product_original_price.indexOf("$")) product_original_price = `$${product_original_price}` 
-    if(product_price.indexOf("$")) product_price = `$${product_price}` 
+    if(product_original_price != null && product_original_price.indexOf("$") === -1) product_original_price = `$${product_original_price}` 
+    if(product_price.indexOf("$") === -1) product_price = `$${product_price}` 
 
     return /*html*/`
     <li>
