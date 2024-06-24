@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout</title>
     <link rel="stylesheet" href="../css/checkout.css">
+    <script type="module" src="../js/checkout.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -20,7 +21,7 @@
     </header>
     <main class="main">
         <section class="checkout__details">
-            <article class="details__product">
+            <!-- <article class="details__product">
                 <div class="product_image">
                     <img src="../storage/img/img4.png">
                 </div>
@@ -37,50 +38,14 @@
                         <img src="../storage/img/plusW.svg">
                     </div>
                 </div>
-            </article>
-            <article class="details__product">
-                <div class="product_image">
-                    <img src="../storage/img/img4.png" alt="hero">
-                </div>
-                <div class="product__description">
-                    <h3>Modern light clothes</h3>
-                    <small>Modern light clothes</small>
-                    <span>$212.99</span>
-                </div>
-                <div class="product__custom">
-                    <img src="../storage/img/tree_dot.svg">
-                    <div class="product__select">
-                        <img src="../storage/img/minusW.svg">
-                        <span>4</span>
-                        <img src="/storage/img/plusW.svg">
-                    </div>
-                </div>
-            </article>
-            <article class="details__product">
-                <div class="product_image">
-                    <img src="../storage/img/img4.png" alt="hero">
-                </div>
-                <div class="product__description">
-                    <h3>Modern light clothes</h3>
-                    <small>Modern light clothes</small>
-                    <span>$212.99</span>
-                </div>
-                <div class="product__custom">
-                    <img src="../storage/img/tree_dot.svg">
-                    <div class="product__select">
-                        <img src="../storage/img/minusW.svg">
-                        <span>4</span>
-                        <img src="../storage/img/plusW.svg">
-                    </div>
-                </div>
-            </article>
+            </article> -->
         </section>
         <section class="section__Shopping">
             <article class="Shopping__title">
                 <h3>Shopping Information</h3>
             </article>
             <article class="section__card">
-                <div class="dropdown">
+                <!-- <div class="dropdown">
                     <div class="dropdown__button">
                         <div class="shopping__card">
                             <img src="../storage/img/visa.svg">
@@ -104,12 +69,12 @@
                             <label>**** **** **** 2143</label>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </article>
             <article class="section__bill">
                 <div class="bill__total">
-                    <label>Total (9 items)</label>
-                    <span>$131.97</span>
+                    <label id="labelItems">Total (9 items)</label>
+                    <span id="precioSpan">$131.97</span>
                 </div>
                 <div class="bill__fee">
                     <label>Shipping Fee</label>
@@ -117,7 +82,7 @@
                 </div>
                 <div class="bill__subtotal">
                     <label>Sub total</label>
-                    <span>131.97</span>
+                    <span id="subTotalSpan">131.97</span>
                 </div>
             </article>
         </section>

@@ -48,6 +48,14 @@
     height: 70px;
 }
 
+#photoForDelete{
+    width: 70px;
+    height: 70px;
+    border-radius: 15px;
+    object-fit: cover;
+
+}
+
 .product_image img{
     width: 70px;
     height: 70px;

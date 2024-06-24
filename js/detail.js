@@ -21,6 +21,12 @@ addEventListener("DOMContentLoaded", async(e)=>{
 
     product__information.innerHTML = await productDetail(info);
     footer__ul.innerHTML = await buttonCartDetails(info);
+
+    footer__ul.addEventListener("click", async e=>{
+        let dict = JSON.parse(localStorage.getItem(id));
+        dict["checkout"] = true;
+        localStorage.setItem(id, JSON.stringify(dict));
+    })
     
     // let {data} = res;
     // let {
